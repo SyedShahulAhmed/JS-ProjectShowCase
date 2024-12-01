@@ -14,7 +14,7 @@ const SectionJs = () => {
         Step into a world of interactive, innovative, and inspiring JavaScript projects. Explore my journey of code, creativity.
         </p>
         <a href="#project">
-        <button className="text-slate-300 flex justify-center gap-2 hover:bg-[#433D86]uy7i8 py-3 px-6 rounded-lg bg-[#433D91]">
+        <button className="text-white flex justify-center gap-2 hover:bg-[#534e9e] py-3 px-6 rounded-lg bg-[#645dcf]">
             Explore Projects
               <img src={RArrow} alt="" className="w-6 h-6"/>
         </button>

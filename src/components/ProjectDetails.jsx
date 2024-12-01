@@ -16,7 +16,7 @@ const ProjectDetails = () => {
         />
       </Link>
       <div className="flex flex-col justify-center text-center items-center ">
-        <h1 className="text-xl font-bold tracking-wider sm:xl md:text-2xl lg:text-4xl">
+        <h1 className="text-xl font-bold tracking-wider sm:xl md:text-2xl lg:text-4xl text-[#ffe46c]">
           {project.title}
         </h1>
         <p className="text-md text-gray-300 sm:lg md:text-xl lg:text-2xl my-4 mx-4 text-justify md:text-center leading-relaxed">
@@ -24,16 +24,16 @@ const ProjectDetails = () => {
         </p>
         <div>
           <h1 className="text-xl font-bold tracking-wider sm:xl md:text-2xl lg:text-4xl mt-6">
-            Video Preview
+            <span className="text-[#6921f8]">Video</span> Preview
           </h1>
           <video
             controls
-            className="w-full max-w-3xl mx-auto px-2 md:px-0 rounded-lg shadow-lg border-2 border-gray-700 m-4"
+            className="w-full max-w-3xl mx-auto px-2 md:px-0 rounded-lg shadow-lg border-2 border-gray-700 m-4 "
             autoPlay loop muted
             style={{
               height: "auto",
               cursor: "pointer",
-              transition: "transform 0.3s ease-in-out",
+              transition: "transform 0.3s ease-in-out ",
             }}
             onMouseOver={(e) => (e.target.style.transform = "scale(1.05)")}
             onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
@@ -45,12 +45,12 @@ const ProjectDetails = () => {
       </div>
       <div className="grid lg:grid-cols-3 place-content-center">
         <div className="col-span-2 flex flex-col justify-centeritems center mx-6 lg:block">
-            <h1 className="text-xl  sm:xl md:text-2xl lg:text-3xl  font-bold text-gray-300 tracking-wider my-6 text-center">Desktop Preview</h1>
-            <img src={project.img} alt="" className="rounded-lg hover:scale-105" />
+            <h1 className="text-xl  sm:xl md:text-2xl lg:text-3xl  font-bold text-gray-300 tracking-wider my-6 text-center"> <span className="text-[#6921f8]">Desktop</span> Preview</h1>
+            <img src={project.img} alt="" className="rounded-lg hover:scale-105 transition-all duration-300" />
         </div>
         <div className="flex flex-col col-span-2 md:col-span-1 justify-center items center mx-6 ">
-            <h1 className="text-xl  sm:xl md:text-2xl lg:text-3xl  font-bold text-gray-300 tracking-wider my-6 text-center">Mobile Preview</h1>
-            <img src={project.Mimg} alt="" className="rounded-lg h-[600px] hover:scale-105"/>
+            <h1 className="text-xl  sm:xl md:text-2xl lg:text-3xl  font-bold text-gray-300 tracking-wider my-6 text-center"><span className="text-[#6921f8]">Mobile</span> Preview</h1>
+            <img src={project.Mimg} alt="" className="rounded-lg h-[600px] hover:scale-105 transition-all duration-300"/>
         </div>
       </div>
       <div className="flex justify-center items-center mt-8">

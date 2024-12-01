@@ -16,7 +16,7 @@ const Javascript = () => {
           />
         </div>
         <div className=" flex flex-col justify-center items-start px-7 m text-white py-7 ">
-      <div className="max-w-[500px]">
+      <div className="max-w-[500px] mx-auto">
       <h1 className="text-3xl  md:text-4xl lg:text-5xl py-6 font-bold text-yellow-500">
       Why JavaScript?
         </h1>
@@ -26,9 +26,9 @@ const Javascript = () => {
         JavaScript is essential for creating seamless user experiences. With its versatility, JavaScript powers everything from real-time updates, animations, and interactive forms to complex web APIs.
         </p>
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-        <button className="text-slate-300 flex justify-center gap-2 hover:bg-[#433D86]uy7i8 py-3 px-6 rounded-lg bg-[#433D91]">
+        <button className="text-white flex justify-center gap-2 hover:bg-[#534e9e] py-3 px-6 rounded-lg bg-[#645dcf]">
             Learn more
-            <img src={Uarrow} alt="" className='w-6 h-6'/>
+            <img src={Uarrow} alt="" className='w-6 h-6 invert'/>
         </button>
         </a>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { FaTwitter, FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import xcom from "../assets/X.png";
 import { toast } from "react-toastify";
-
+import img from '../assets/Contact.png'
 const Contact = () => {
   const AccessKey = import.meta.env.VITE_API_URL
   const [result, setResult] = React.useState("");
@@ -33,7 +33,7 @@ const Contact = () => {
   };
   return (
     <div className="max-w-[1240px] bg-transparent mx-auto mb-7">
-      <h1 className="text-center uppercase tracking-wider font-bold text-3xl  md:text-4xl lg:text-5xl text-white py-0 lg:py-7">
+      <h1 className="text-center uppercase tracking-wider font-bold text-3xl  md:text-4xl lg:text-5xl text-[#8d43ff] py-0 lg:py-7">
         Contact form
       </h1>
       <div
@@ -42,6 +42,7 @@ const Contact = () => {
       lg:border-2 rounded-xl lg:shadow-lg shadow-slate-900"
       >
         <div className="flex flex-col justify-center lg:py-12 px-12">
+          <img src={img} alt="" className="w-20 h-20 object-cover mx-auto mt-4"/>
           <p className="text-xl leading-relaxed py-6 text-gray-300">
             I’d love to hear from you! Whether you have feedback on my projects,
             want to collaborate, or just want to say hello, feel free to reach
@@ -54,28 +55,28 @@ const Contact = () => {
               rel="noopener noreferrer"
             >
               {/* <FaTwitter className="text-2xl hover:text-[#1DA1F2] transition-colors duration-300" /> */}
-              <img src={xcom} alt="" className="w-6 h-6" />
+              <img src={xcom} alt="" className="w-6 h-6 invert hover:invert-0 transition-all duration-300" />
             </a>
             <a
               href="https://github.com/SyedShahulAhmed"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="text-2xl text-black hover:text-[#333] transition-colors duration-300" />
+              <FaGithub className="text-2xl text-white hover:text-[#333] transition-colors duration-300" />
             </a>
             <a
               href="https://www.linkedin.com/in/shahul-ahmed/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-2xl text-black hover:text-[#0077B5] transition-colors duration-300" />
+              <FaLinkedin className="text-2xl text-white hover:text-[#0077B5] transition-colors duration-300" />
             </a>
             <a
               href="https://www.instagram.com/vincenzo_773/profilecard/?igsh=cDBsMWVzMGg0YzU3"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram className="text-2xl text-black hover:text-[#E1306C] transition-colors duration-300" />
+              <FaInstagram className="text-2xl text-white hover:text-[#E1306C] transition-colors duration-300" />
             </a>
           </div>
         </div>
