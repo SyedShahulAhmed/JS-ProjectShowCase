@@ -9,12 +9,14 @@ import Project from './components/Project';
 import ProjectDetails from './components/ProjectDetails';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
+import ScrollToTop from './components/ScrollTop';
 
 function App() {
   return (
     <Router>
       <div className="bg-[#252252] w-full h-full overflow-x-hidden">
         <ToastContainer/>
+        <ScrollToTop/>
         <Navbar />
         <Routes>
           <Route path="/" element={
